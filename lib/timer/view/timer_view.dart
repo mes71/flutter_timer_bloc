@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_timer_bloc/timer/view/widget/actions.dart' as appAction;
-import 'package:flutter_timer_bloc/timer/view/widget/background.dart';
-import 'package:flutter_timer_bloc/timer/view/widget/timer_text.dart';
+
+import 'widget/widget.dart';
 
 class TimerView extends StatelessWidget {
   const TimerView({super.key});
@@ -25,10 +24,9 @@ class TimerView extends StatelessWidget {
                 padding: EdgeInsets.symmetric(vertical: 100),
                 child: Center(child: TimerText()),
               ),
-              appAction.Actions()
+              TimerAction()
             ],
           ),
-
         ],
       ),
     );
